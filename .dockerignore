@@ -1,0 +1,7 @@
+frontend/.vscode
+frontend/eslint.config.js
+frontend/.prettierrc.json
+frontend/.oxlintrc.json
+frontend/.env.development
+frontend/.editorconfig
+backend/.env

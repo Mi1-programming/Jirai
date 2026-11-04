@@ -1,0 +1,15 @@
+services:
+  server:
+    build: ./
+    container_name: jirai-server
+    restart: unless-stopped
+    networks:
+        - public
+    environment:
+      EXPRESS_PORT: 8080
+      VITE_API_SERVICE_ADDRESS: http://server:8080
+      VITE_WEBSOCKET_SERVICE_ADDRESS: ws://server:8080
+    ports:
+        - "8080:8080"
+networks:
+    public: 

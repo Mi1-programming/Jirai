@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: fireSans, Verdana, sans-serif;
+	color: white;
+	line-height: 1.4;
+}
+
+@font-face {
+  font-family: fireSans;
+  src: url(resources/fonts/Fira_Sans/FiraSans-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: fireSans;
+  src: url(resources/fonts/Fira_Sans/FiraSans-Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'DSEG7-Classic';
+  src: url(resources/fonts/DSEG7-Classic/DSEG7Classic-Regular.ttf);
+}
+
+body {
+	background-image: url("resources/background.png");
+}
+h1, h2, h3 {
+	text-align: center;
+	margin: 4px 4px 16px 4px;
+}
+label {
+	margin-right: 8px;
+}
+p, i, b {
+	margin: 8px 4px;
+	text-align: center;
+	color: #ADE8F4;
+}
+a {
+	color: #00B4D8;
+}
+fieldset {
+	padding: 16px;
+	margin: 32px 8px;
+	border-color: #023E8A;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+legend {
+	font-weight: bold;
+	padding-inline: 8px;
+	text-align: center;
+}
+button {
+	padding: 8px 12px;
+	margin: 4px 8px;
+	background-color: #023E8A;
+	border: 0;
+	border-radius: 10%;
+}
+button:hover {
+	background-color: #0077B6;
+}
+li {
+	margin: 8px 32px;
+	color: #48CAE4;
+}
+summary {
+	user-select: none;
+}
+input {
+	padding: 4px 8px;
+	background: black;
+	border: 0;
+	border-bottom: 2px solid #0077B6;
+}
+input::placeholder {
+	color: #0077B6;
+}
+
+.sidenote {
+	color: #0077B6;
+}
+.logo {
+	height: 64px;
+	width: 100%;
+	margin: 16px 8px;
+	object-fit: contain;
+}
+.background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.page {
+	overflow-y: auto;
+	max-width: 700px;
+	width: 100%;
+	padding: 16px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-inline: 2px solid #023E8A;
+	background: linear-gradient(#023E8A, #03045E 20%);
+}
+.formRow {
+	display: flex;
+	width: 320px;
+}
+.formRow label {
+	flex: 1 1;
+}
+.tools {
+	padding: 16px 8px;
+	display: flex;
+	justify-content: center;
+}
